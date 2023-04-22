@@ -1,0 +1,76 @@
+@import '../../styles/colors.scss';
+
+.card {
+  width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $very-dark-blue-line;
+
+  margin-bottom: 40px;
+}
+
+.img {
+  position: relative;
+  width: 100%;
+  height: 300px;
+
+  & img {
+    width: 100%;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover .view {
+    opacity: 0.5;
+  }
+}
+
+.view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $cyan;
+  opacity: 0;
+
+  & img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.title {
+  color: $white;
+  font-weight: 600;
+}
+
+.subtitle {
+  color: $soft-blue;
+}
+
+.ethereum {
+  color: $cyan;
+  font-weight: 600;
+}
+
+.clock {
+  color: $soft-blue;
+}
+
+.creation {
+  color: $soft-blue;
+}
+
+.link {
+  color: $white;
+  text-decoration: none;
+}

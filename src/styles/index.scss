@@ -1,0 +1,10 @@
+@import './colors.scss';
+@import './fonts.scss';
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Outfit', sans-serif;
+  background-color: $very-dark-blue-main;
+}
