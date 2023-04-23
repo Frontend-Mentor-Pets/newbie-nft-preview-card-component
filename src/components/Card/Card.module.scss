@@ -1,24 +1,29 @@
 @import '../../styles/colors.scss';
 
 .card {
-  width: 300px;
+  width: 350px;
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   background-color: $very-dark-blue-line;
-
-  margin-bottom: 40px;
+  box-sizing: border-box;
+  margin-top: 152px;
+  padding: 25px;
+  border-radius: 15px;
 }
 
 .img {
   position: relative;
   width: 100%;
   height: 300px;
+  border-radius: 8px;
+  margin-bottom: 17px;
 
   & img {
     width: 100%;
+    border-radius: 8px;
   }
 
   &:hover {
@@ -40,30 +45,88 @@
   align-items: center;
   justify-content: center;
   background-color: $cyan;
+  border-radius: 8px;
   opacity: 0;
 
   & img {
     width: 50px;
     height: 50px;
+    border-radius: 8px;
   }
 }
 
 .title {
   color: $white;
   font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 1.4px;
+  margin-bottom: 5px;
+
+  &:hover {
+    cursor: pointer;
+    color: $cyan;
+  }
 }
 
 .subtitle {
   color: $soft-blue;
+  letter-spacing: 1px;
+  line-height: 26px;
+  margin-bottom: 24px;
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
 }
 
 .ethereum {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 6px;
   color: $cyan;
   font-weight: 600;
 }
 
 .clock {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
   color: $soft-blue;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: $soft-blue;
+  align-self: center;
+  margin-bottom: 16px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 6px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border: 1px solid $white;
+  border-radius: 50%;
+
+  & img {
+    width: 100%;
+  }
 }
 
 .creation {
@@ -73,4 +136,10 @@
 .link {
   color: $white;
   text-decoration: none;
+  letter-spacing: 0.3px;
+
+  &:hover {
+    cursor: pointer;
+    color: $cyan;
+  }
 }

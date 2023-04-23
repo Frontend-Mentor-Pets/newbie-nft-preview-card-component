@@ -28,7 +28,9 @@ const Card = () => {
       </div>
       <div className={styles.line}></div>
       <div className={styles.footer}>
-        <img src={avatar} alt='Avatar' className={styles.avatar} />
+        <div className={styles.avatar}>
+          <img src={avatar} alt='Avatar' />
+        </div>
         <span className={styles.creation}>
           Creation of{' '}
           <a href='#!' className={styles.link}>
